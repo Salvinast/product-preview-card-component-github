@@ -1,0 +1,147 @@
+body, html {
+
+    background-color: hsl(30, 38%, 92%);
+    /* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+    
+    
+}
+
+* { 
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+     box-sizing: border-box; 
+}
+
+.container {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    
+    
+
+}
+
+.mainImage {
+    max-width: 270px;
+    height: auto;
+    border-radius: .7rem 0 0 .7rem;
+}
+
+.text {
+    
+    height: auto;
+    background-color: white;
+    border-radius: 0 .7rem 0.7rem 0;
+    padding: 1.4rem;
+    width: 270px;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(228, 12%, 48%);
+    line-height: 1.3rem;
+    font-family: 'Montserrat', sans-serif;
+    padding-bottom: .8rem;
+}
+
+h1 {
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-family: 'Fraunces', serif;
+    width: 12rem;
+    margin: .8rem 0 1.3rem 0;
+    line-height: 1.8rem;
+}
+
+h2 {
+    margin-top: 0.3rem ;
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    font-size: .7rem;
+    letter-spacing: .3rem;
+    font-weight: 200;
+}
+
+.discounted {
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 2rem;
+}
+
+.notDiscounted {
+    position: absolute;
+    line-height: 35px;
+    height: 35px;
+    margin-left: 1.3rem;
+    font-size: .9rem;
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+}
+
+button  {
+    width: 215px;
+    margin-top: .2rem;
+    padding: .9rem 1rem;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: .4rem;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: .8rem;
+}
+.cart {
+    width: .9rem;
+    
+    
+    display: inline-block;
+    transform: translate(46px, 36px);
+
+}
+button:hover {
+    background-color: hsl(159, 97%, 15%);
+    cursor: pointer;
+}
+
+.mainImageMobile {
+    display: none;
+}
+
+@media (max-width: 23em) {
+    .text {
+        width: 340px;
+        height: 370px;
+        border-radius: 0 0 0.7rem 0.7rem;
+    }
+    .container {
+        flex-wrap: wrap;
+    }
+
+    .mainImage {
+        display: none;
+    }
+
+    .mainImageMobile {
+        display: block;
+        width: 340px;
+        border-radius: 0.7rem 0.7rem 0 0;
+    }
+
+    h1 {
+        width: 276px;
+    }
+
+    button {
+        width: 293px;
+        padding: 1rem;
+    }
+
+    .cart {
+        transform: translate(84px, 38px);
+    }
+    
+}
