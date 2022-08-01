@@ -85,7 +85,7 @@ h2 {
 
 button  {
     width: 215px;
-    margin-top: .2rem;
+    margin-top: 1rem;
     padding: .9rem 1rem;
     background-color: hsl(158, 36%, 37%);
     border: none;
@@ -93,6 +93,11 @@ button  {
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: .8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
 }
 .cart {
     width: .9rem;
